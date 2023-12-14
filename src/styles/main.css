@@ -147,7 +147,7 @@ nav {
 
 .wrapper-item:last-child
 {
-    align-items: center;
+    align-items: flex-end;
 }
 
 .title {
@@ -182,6 +182,7 @@ nav {
 }
 
 .main-list > li {
+    height: 3.2rem;
     border-color: black;
     border-width: 2px;
     background-color: white;
@@ -196,6 +197,12 @@ nav {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.icon-button > span {
+  font-size: 1.5rem;
+  background-color: rgb(244 246 250);
+  padding: 2px 8px;
 }
 
 .icon-button > img {

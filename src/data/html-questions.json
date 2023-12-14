@@ -1,0 +1,20 @@
+{
+    "options": [
+        {
+            "option": "A",
+            "text": "Question 1"
+        },
+        {
+            "option": "B",
+            "text": "Question 2"
+        },
+        {
+            "option": "C",
+            "text": "Question 3"
+        },
+        {
+            "option": "D",
+            "text": "Question 4"
+        }
+    ]
+}
