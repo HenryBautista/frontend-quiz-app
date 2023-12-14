@@ -9,7 +9,8 @@ $(function () {
 
     function loadPage(page){
         const viewsPath = 'src/views'
-        $('#content').load(`${viewsPath}/${page}.html`)
+        const pagePath = page === '' ? 'home' : page
+        $('#content').load(`${viewsPath}/${pagePath}.html`)
     }
 
     $('#toggle').change(function (e) { 
