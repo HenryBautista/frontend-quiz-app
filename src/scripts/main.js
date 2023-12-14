@@ -11,4 +11,15 @@ $(function () {
         const viewsPath = 'src/views'
         $('#content').load(`${viewsPath}/${page}.html`)
     }
+
+    $('#toggle').change(function (e) { 
+        
+        const body = $('body')
+
+        if ($(this).prop('checked')) {
+            body.addClass('dark-theme')
+        } else {
+            body.removeClass('dark-theme')
+        }
+    });
 })

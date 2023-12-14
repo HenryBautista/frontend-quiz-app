@@ -49,6 +49,12 @@
 
 body {
     font-family: 'rubik', sans-serif;
+    transition: .3s;
+}
+
+body.dark-theme {
+    background-color: #3b4d66;
+    color: #fff;
 }
 
 nav {
@@ -108,7 +114,6 @@ nav {
     cursor: pointer;
 }
 
-/* Desplaza el botón cuando está activado (checked) */
 #toggle:checked + .toggle-btn::before {
     transform: translateX(20px);
 }
