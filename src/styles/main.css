@@ -157,6 +157,18 @@ nav {
     padding-top: 0px;
 }
 
+.subtitle {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.subtitle-question {
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
 .title > span {
     font-weight: bold;
 }
