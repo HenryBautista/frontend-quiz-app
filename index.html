@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
-<body>
-    
-    <nav>
-        <ul>
-            <li><a href="#HTML" >HMTL</a></li>
-            <li><a href="#CSS" >CSS</a></li>
-            <li><a href="#javascript" >Javascript</a></li>
-            <li><a href="#accessibility" >Accessibility</a></li>
-        </ul>
-    </nav>
 
-    <div id="content"></div>
+<body>
+    <div class="background-image"></div>
+    <nav>
+        <div class="nav">
+            <div class="nav-item">
+                <img src="starter-code/assets/images/icon-html.svg" alt="main icon-html">
+                <p>
+                    HTML
+                </p>
+            </div>
+            <div class="nav-item">
+                Nigth mode
+            </div>
+        </div>
+    </nav>
+    <div id="content" class="content">
+        <div class="wrapper">
+            <div class="wrapper-item">
+                <h1 class="title">
+                    Welcome to the
+                    <br>
+                    <span>Frontend Quiz!</span>
+                </h1>
+                <p class="font-rubik-italic">Pick a subject to get started.</p>
+            </div>
+            <div class="wrapper-item">
+                <ul>
+                    <li><a href="#HTML">HMTL</a></li>
+                    <li><a href="#CSS">CSS</a></li>
+                    <li><a href="#javascript">Javascript</a></li>
+                    <li><a href="#accessibility">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="src/scripts/main.js"></script>
 </body>
+
 </html>
