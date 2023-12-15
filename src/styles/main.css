@@ -134,7 +134,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 80%;
     margin-top: 2rem;
 }
@@ -182,13 +182,14 @@ nav {
 }
 
 .main-list > li {
-    height: 3.2rem;
+    height: 3.4rem;
     border-color: black;
     border-width: 2px;
     background-color: white;
     border-radius: 10px;
     padding: 0px 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
 }
 
 .icon-button {

@@ -1,20 +1,54 @@
 {
-    "options": [
+    "quiz": [
         {
-            "option": "A",
-            "text": "Question 1"
+            "question": "What does HTML stand for?",
+            "options": [
+                {
+                    "option": "A",
+                    "text": "Hyper trainer marking language",
+                    "correct": false
+                },
+                {
+                    "option": "B",
+                    "text": "Hyper text marketing language",
+                    "correct": false
+                },
+                {
+                    "option": "C",
+                    "text": "Hyper text markup language",
+                    "correct": true
+                },
+                {
+                    "option": "D",
+                    "text": "Hyper text markup leveler",
+                    "correct": false
+                }
+            ]
         },
         {
-            "option": "B",
-            "text": "Question 2"
-        },
-        {
-            "option": "C",
-            "text": "Question 3"
-        },
-        {
-            "option": "D",
-            "text": "Question 4"
+            "question": "What is the purpose of the <body> tag in HTML?",
+            "options": [
+                {
+                    "option": "A",
+                    "text": "It defines the document's head section.",
+                    "correct": false
+                },
+                {
+                    "option": "B",
+                    "text": "It contains all the content such as text, images, and links.",
+                    "correct": true
+                },
+                {
+                    "option": "C",
+                    "text": "It is used to define the main content of an HTML document.",
+                    "correct": false
+                },
+                {
+                    "option": "D",
+                    "text": "It specifies the body of the email content in HTML.",
+                    "correct": false
+                }
+            ]
         }
     ]
 }
