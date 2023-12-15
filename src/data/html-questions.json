@@ -5,52 +5,47 @@
             "options": [
                 {
                     "option": "A",
-                    "text": "Answer 1",
+                    "text": "Hyper trainer marking language",
                     "correct": false
                 },
                 {
                     "option": "B",
-                    "text": "Answer 2",
+                    "text": "Hyper text marketing language",
                     "correct": false
                 },
                 {
                     "option": "C",
-                    "text": "Answer 3",
-                    "correct": false
+                    "text": "Hyper text markup language",
+                    "correct": true
                 },
                 {
                     "option": "D",
-                    "text": "Answer 4",
-                    "correct": true
+                    "text": "Hyper text markup leveler",
+                    "correct": false
                 }
             ]
         },
         {
-            "question": "Which of the following is the correct structure for an HTML document?",
+            "question": "What is the purpose of the <body> tag in HTML?",
             "options": [
                 {
                     "option": "A",
-                    "text": "Answer 1",
-                    "correct": true
-                },
-                {
-                    "option": "B",
-                    "text": "Answer 2",
+                    "text": "It defines the document's head section.",
                     "correct": false
                 },
                 {
+                    "option": "B",
+                    "text": "It contains all the content such as text, images, and links.",
+                    "correct": true
+                },
+                {
                     "option": "C",
-                    "text": "Answer 3",
+                    "text": "It is used to define the main content of an HTML document.",
                     "correct": false
                 },
                 {
                     "option": "D",
-                    "text": "Answer 4",
-                    "correct": false
-                },
-                {
-                    "option": "E",
-                    "text": "Answer 5",
+                    "text": "It specifies the body of the email content in HTML.",
                     "correct": false
                 }
             ]
