@@ -2,6 +2,12 @@
 
 ![Design preview for the Frontend quiz app coding challenge](./preview.jpg)
 
+## Deployed
+
+Please check the app Here
+
+https://main--aesthetic-marigold-643bc4.netlify.app/
+
 ## Welcome! 👋
 
 **To do this challenge, you need a strong understanding of HTML, CSS, and JavaScript.**
