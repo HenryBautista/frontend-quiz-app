@@ -11,6 +11,18 @@
     border: 0.5px solid violet;
 }
 
+.icon-question-button.selected {
+    border: 2px solid rgb(146, 72, 180);
+}
+
+.icon-question-button.incorrect {
+    border: 2px solid #EE5454;
+}
+
+.icon-question-button.correct {
+    border: 2px solid #26d782;
+}
+
 .icon-button > span {
   font-size: 1.5rem;
   background-color: rgb(244 246 250);

@@ -2,19 +2,23 @@
     "options": [
         {
             "option": "A",
-            "text": "Question 1"
+            "text": "Question 1",
+            "correct": false
         },
         {
             "option": "B",
-            "text": "Question 2"
+            "text": "Question 2",
+            "correct": false
         },
         {
             "option": "C",
-            "text": "Question 3"
+            "text": "Question 3",
+            "correct": false
         },
         {
             "option": "D",
-            "text": "Question 4"
+            "text": "Question 4",
+            "correct": true
         }
     ]
 }
