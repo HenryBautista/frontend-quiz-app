@@ -1,24 +1,59 @@
 {
-    "options": [
+    "quiz": [
         {
-            "option": "A",
-            "text": "Question 1",
-            "correct": false
+            "question": "What does HTML stand for?",
+            "options": [
+                {
+                    "option": "A",
+                    "text": "Answer 1",
+                    "correct": false
+                },
+                {
+                    "option": "B",
+                    "text": "Answer 2",
+                    "correct": false
+                },
+                {
+                    "option": "C",
+                    "text": "Answer 3",
+                    "correct": false
+                },
+                {
+                    "option": "D",
+                    "text": "Answer 4",
+                    "correct": true
+                }
+            ]
         },
         {
-            "option": "B",
-            "text": "Question 2",
-            "correct": false
-        },
-        {
-            "option": "C",
-            "text": "Question 3",
-            "correct": false
-        },
-        {
-            "option": "D",
-            "text": "Question 4",
-            "correct": true
+            "question": "Which of the following is the correct structure for an HTML document?",
+            "options": [
+                {
+                    "option": "A",
+                    "text": "Answer 1",
+                    "correct": true
+                },
+                {
+                    "option": "B",
+                    "text": "Answer 2",
+                    "correct": false
+                },
+                {
+                    "option": "C",
+                    "text": "Answer 3",
+                    "correct": false
+                },
+                {
+                    "option": "D",
+                    "text": "Answer 4",
+                    "correct": false
+                },
+                {
+                    "option": "E",
+                    "text": "Answer 5",
+                    "correct": false
+                }
+            ]
         }
     ]
 }

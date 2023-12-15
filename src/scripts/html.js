@@ -1,22 +1,45 @@
-$(document).ready(function () {
-
-    // Fill Data to list
-    const dataPath = '/src/data/html-questions.json'
-    $.getJSON(dataPath, function (data) {
-        const { options } = data
+$(document).ready(async function () {
+    const hideElement = (element) => element.addClass('hidden')
+    const unhideElement = (element) => element.removeClass('hidden')
+    const checkQuestionList = () => {
+        $('.icon-question-button').each(function () {
+            const currentOption = $(this)
+            const value = currentOption.data('value')
+            if (value) {
+                currentOption.removeClass('selected')
+                currentOption.addClass('correct')
+            }
+        }); 
+    }
+    const fillQuestion = (quiz, count) => {
+        const { options, question } = quiz[count]
         const list = $('#list-html')
-
-        for (let index = 0; index < options.length; index++) {
+        $('#subtitle').text(question)
+        options.map(option => {
             const listElement = `<li
                                     class="icon-question-button"
-                                    data-value="${options[index].correct}">
-                                    <span>${options[index].option}</span>
-                                    ${options[index].text}
+                                    data-value="${option.correct}">
+                                    <span>${option.option}</span>
+                                    ${option.text}
                                 </li>`
             list.append(listElement);
-        }
-    });
+        })
+    }
+    const finishQuiz = () => {
+        alert('finish')
+        const viewsPath = 'src/views'
+        const pagePath = 'home'
+        $('#content').load(`${viewsPath}/${pagePath}.html`)
+    }
 
+    const dataPath = '/src/data/html-questions.json'
+    const response = await fetch(dataPath)
+    const data = await response.json()
+    const { quiz } = data
+    let currentQuestionCount = 0
+
+    fillQuestion(quiz, currentQuestionCount)
+    
     $('#list-html').on('click','.icon-question-button', function() {
         $('.icon-question-button').removeClass('selected')
         $(this).addClass('selected')
@@ -41,17 +64,18 @@ $(document).ready(function () {
         unhideElement($('#button-next'))
     });
 
-    const hideElement = (element) => element.addClass('hidden')
-    const unhideElement = (element) => element.removeClass('hidden')
-    const checkQuestionList = () => {
-        $('.icon-question-button').each(function () {
-            const currentOption = $(this)
-            const value = currentOption.data('value')
-            if (value) {
-                currentOption.removeClass('selected')
-                currentOption.addClass('correct')
-            }
-        }); 
-    }
-    
+    $('#button-next').click(() => {
+        $('#list-html').empty()
+        hideElement($('#button-next'))
+        unhideElement($('#button-submit'))
+        currentQuestionCount++
+        
+        if (currentQuestionCount < quiz.length) {
+            fillQuestion(quiz, currentQuestionCount)
+        }
+        else {
+            finishQuiz()
+        }
+        
+    })
 });
